@@ -22,5 +22,5 @@ int main()
        }
        nguess++;
     } while (guess!=number);
-    printf("coreect number guessed = %d \n took %d chances",number,nguess);
+    printf("correct number guessed = %d \n took %d chances",number,nguess);
 }
