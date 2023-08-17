@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="PG Entry">
+<head>
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="pgfinderentery.css">
+    <link rel="icon" href="80f57502a51c3cce96b482131e711f86.jpg">
+</head>
+<body>
+    <div>
+        <h1> Registeration form</h1>
+        <form class="forum" autocomplete="off">
+            <fieldset>
+                <legend>Personal Info</legend>
+                    <label for="username" class="username">Name</label><br>
+                    <input type="text" required placeholder="Username" width="200" height="200" autocomplete="off" ><br>
+                    <label for="mobileno.">Phone-number</label><br>
+                    <input type="tel" required pattern="[0-9]{10}" width="200" height="200" placeholder="Phone-number" >
+            </fieldset>
+
+            <fieldset>
+                <legend>PG Info</legend>
+                    <label for="pgName">Pg-Name</label><br>
+                    <input type="text" required placeholder="ABC pg" width="200" height="200" ><br>
+                    <label for="location">Location</label><br>
+                    <input type="text" width="200" height="200" name="location" id="location" list="location-list" placeholder="Location">
+                    <datalist id="location-list">
+                        <option value="Boileuganj"></option>
+                        <option value="Chailly"></option>
+                        <option value="First-Sangti"></option>
+                        <option value="Middle-Sangti"></option>
+                        <option value="Summer Hill"></option>                      
+                        <option value="Third-Sangti"></option>
+                        <option value="Tutikandi"></option>
+                        <option value="Tutu"></option>
+                        <option value="MI Rooms"></option>
+                    </datalist> 
+                    <br>
+                    <label for="address">Address</label><br>
+                    <textarea name="address" width="200" height="200" id="address" cols="60" rows="5" required placeholder="Enter your Detailed address"></textarea>
+                    
+            </fieldset>
+
+            <fieldset>
+                <legend>Rooms</legend>
+                    <label for="totalNoOfRooms">Total number of rooms</label><br>
+                    <input type="number" width="200" height="200" min="1"><br>
+                    <label for="singleSharing">Number of single rooms</label><br>
+                    <input type="number" width="200" height="200"min="1"><br>
+                    <label for="doubleSharing">Number of double rooms</label><br>
+                    <input type="number" width="200" height="200"min="0"><br>
+                    <label for="tripleSharing">Number of triple rooms</label><br>
+                    <input type="number" width="200" height="200"min="0"><br>
+                    <label for="moreThan3Sharing">Number of more than 3 Sharing rooms</label><br>
+                    <input type="number" width="200" height="200"min="0"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Amenities</legend>
+                 <table>
+                    <tr><td>Food:</td><td><input type="radio" name="Food">Yes
+                        <input type="radio" name="Food">No</td> </tr>
+                        <tr><td>Wifi</td>  <td><input type="radio" name="Wifi">Yes
+                            <input type="radio" name="Wifi"">No</td></tr>
+                            <tr><td>Laundary facilities:</td> <td><input type="radio" name="Laundary">Yes <input type="radio" name="Laundary">No</td></tr>
+                            <tr><td>Mess:</td> <td><input type="radio" name="Mess">Yes
+                                <input type="radio" name="Mess">No</td></tr>
+                                <tr><td>Attached Washroom:</td> <td><input type="radio" name="attachedWashroom">Yes
+                                    <input type="radio" name="attachedWashroom">No</td></tr>
+                                    <tr><td>Transportation arrangement:</td><td><input type="radio" name="transportation">Yes
+                                        <input type="radio" name="transportation">No</td></tr>
+                            
+                 </table>
+            </fieldset>
+            <button type="reset" title="Clear all input" class="res">Reset</button>
+
+            <button class="Home" title="Take me back to home">Home</button>
+            
+            <button type="submit" formmethod="post" formaction="#" class="sub">Submit</button>
+           
+            
+        </form>
+    </div>
+    
+</body>
